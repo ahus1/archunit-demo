@@ -1,0 +1,9 @@
+= ArchUnit examples
+
+== About
+
+These are some examples to show how https://www.archunit.org/[ArchUnit] can be used to encode and validate rules about best practices an architectural structures of you Java code.
+
+== More Information
+
+You'll find more information including the slides to the talk on my homepage: https://www.ahus1.de/post/archunit-entropy
