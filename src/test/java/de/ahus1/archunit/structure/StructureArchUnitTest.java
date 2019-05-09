@@ -12,7 +12,7 @@ public class StructureArchUnitTest {
 
   @ArchTest
   public final ArchRule adaptersShouldNotDependOnEachOther =
-      SlicesRuleDefinition.slices().matching("..adapter.(**)").should().notDependOnEachOther();
+      SlicesRuleDefinition.slices().matching("..adapter.(*)..").should().notDependOnEachOther();
 
   @ArchTest
   public final ArchRule onionArchitecture =

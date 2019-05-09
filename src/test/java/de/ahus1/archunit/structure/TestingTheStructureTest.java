@@ -16,7 +16,7 @@ public class TestingTheStructureTest {
     Assertions.assertThatExceptionOfType(AssertionError.class).isThrownBy(() -> {
       rule.check(importedClasses);
     })
-        .withMessageContaining("slices matching '..adapter.(**)' should not depend on each other")
+        .withMessageContaining("slices matching '..adapter.(*)..' should not depend on each other")
         .withMessageContaining("(1 times)");
   }
 

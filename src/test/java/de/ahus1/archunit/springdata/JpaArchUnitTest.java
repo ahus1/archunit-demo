@@ -24,7 +24,7 @@ public class JpaArchUnitTest {
             if (!annotationOfType.clearAutomatically()) {
               String message = String.format(
                   "clearAutomatically is not set to true on %s", javaMember.getFullName());
-              events.add(SimpleConditionEvent.violated(javaMember.getFullName(), message));
+              events.add(SimpleConditionEvent.violated(javaMember, message));
             }
             if (!annotationOfType.flushAutomatically()) {
               String message = String.format(

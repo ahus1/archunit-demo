@@ -22,12 +22,9 @@ public class LoggingArchUnitTest {
 
   @ArchTest
   public final ArchRule shouldNotAccessWarnAndErrorMethodsInLogger =
-      ArchRuleDefinition.noClasses()
-          .should(
-              callCodeUnitWhere(
-                  target(
-                      fullNameMatches("org.apache.logging.log4j.Logger.(warn|error)\\(.*\\)")
-                  )
+      ArchRuleDefinition.noClasses().should().callCodeUnitWhere(
+              target(
+                  fullNameMatches("org.apache.logging.log4j.Logger.(warn|error)\\(.*\\)")
               )
           )
           .because("you should have a central library that also assigns error and warning codes to the messages");
