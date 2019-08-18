@@ -9,8 +9,6 @@
 !/.idea/runConfigurations
 # This allows you to check-in data sources for other developers to use
 !/.idea/dataSources.xml
-# This allows you to check-in the Checkstyle configurations in IntelliJ
-!/.idea/checkstyle-idea.xml
 # You can configure your IntelliJ project settings to prompt fellow developers
 # to install required plugins.
 # Once you use this, check in the file
