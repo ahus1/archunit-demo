@@ -39,6 +39,6 @@ public class JpaArchUnitTest {
   public final ArchRule modifyingAnnotationnsShouldHavePropertiesSet =
       ArchRuleDefinition.members().that().areAnnotatedWith(Modifying.class)
           .should(HAVE_MODIFYING_PARAMETERS_SET)
-          .because("so they will flush the peristence context and data will not be found using the ID");
+          .because("so they will flush the persistence context and data will not be found using the ID");
 
 }
